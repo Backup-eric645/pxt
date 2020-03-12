@@ -1263,7 +1263,8 @@ export class Modal extends React.Component<ModalProps, ModalState> {
         const aria = {
             labelledby: header ? this.id + 'title' : undefined,
             describedby: (!isFullscreen && description) ? this.id + 'description' : this.id + 'desc',
-            modal: 'true'
+            modal: 'true',
+            role: 'dialog'
         }
         const customStyles = {
             content: {
